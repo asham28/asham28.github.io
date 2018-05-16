@@ -1,0 +1,37 @@
+.top-banner {
+    display: flex; 
+}
+
+#name {
+    background-color: grey;
+    color: white; 
+    float: left;
+    flex-grow: 2; 
+}
+
+.page-links {
+    background-color: grey;
+    color: black;
+    float: left;  
+}
+
+
+#about {
+    float: left;
+    padding: 20px; 
+}
+
+#portfolio {
+    float: left;
+    padding: 20px; 
+    
+}
+
+#contact {
+    float: left;
+    padding: 20px; 
+}
+
+section {
+    clear: both; 
+}
