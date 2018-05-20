@@ -1,37 +1,171 @@
-.top-banner {
-    display: flex; 
+/*Universal Styles*/
+
+body {
+    box-sizing: border-box;
+    background-image: url("../images/hex-background-image.png");
+    font-family: 'Poppins', sans-serif;
+    max-width: 960px;
+    margin: 0px auto; 
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    clear: both;
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: lightgray;
+    border-top: 10px solid #4aaaa5;
+    padding: 20px 20px 2px 20px;
+}
+
+/*Top Banner*/
+
+.header {
+    position: fixed !important;
+    top: 0;
+    right: 0; 
+    text-align: center;
+    width: 100%;
+    margin: 0 auto ; 
+    background-color: white;
+    border: 1px solid #cccccc;
+
+}
+
+
+.header-inner{
+width: 960px; 
+margin: 0px auto; 
+
+}
 #name {
-    background-color: grey;
-    color: white; 
+    background-color: #4aaaa5;
+    color: white;
     float: left;
-    flex-grow: 2; 
-}
-
-.page-links {
-    background-color: grey;
-    color: black;
-    float: left;  
-}
-
-
-#about {
-    float: left;
-    padding: 20px; 
-}
-
-#portfolio {
-    float: left;
-    padding: 20px; 
+    padding: 25px 20px;
+    margin: 0 auto; 
     
 }
 
-#contact {
+/*Navigation*/
+
+nav {
+    color: #777777;
     float: left;
-    padding: 20px; 
+    margin: 0px 2px;
+    position: relative;
+    left: 500px;
+    padding: 25px 20px;
 }
 
-section {
-    clear: both; 
+nav a {
+    display: inline-block;
+    padding-left: 5px;
+    border-left: 1px solid grey;
+    text-decoration: none;
+    text-decoration-color: currentColor;
+    margin: 0px 2px;
+}
+
+a:link,
+a:visited {
+    color: currentColor;
+}
+
+#about {
+    border-left: none;
+}
+
+/*Main Section*/
+
+.container {
+    clear: both;
+    display: inline-block;
+    max-width: 960px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+.container-header {
+    color: #4aaaa5;
+    padding: 25px 20px;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+/*About Page*/
+
+#profile-image {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*Contact Page - Forms*/
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 80px 20px;
+    border: 1px solid lightgrey; 
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #4aaaa5;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+form {
+    color: #777777;
+}
+
+/*Portfolio Images*/
+
+.container .portfolio-image {
+    display: inline-block;
+    position: static;
+}
+
+.portfolio-image {
+    margin: 10px 10px 0px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    top: -50px;
+    position: relative;
+    padding: 10px 2px;
 }

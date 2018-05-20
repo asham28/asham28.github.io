@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 
 
-<html lang="en-CA">
-    <head>
-<link rel="stylesheet" type="text/css" href="./assets/style.css">
-    </head>
-<!--About Me-->
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <!--rel=stylesheet has extra s-->
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
 
 <body>
-    <header class="top-banner"> 
-    <h1>My Name</h1> 
-        <nav id="page-links">
-            <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
 
-  
+    <!--Content Header-->
+
+    <div class="header">
+        <h1 id="name">Asha Mohamed</h1>
+
+        <!--Navitation Section-->
+
+        <nav class="nav">
+            <a href="index.html" id="about">About</a>
+            <a href="portfolio.html" id="portfolio">Portfolio</a>
+            <a href="contact.html" id="contact">Contact</a>
+        </nav>
+
+    </div>
+
+    <!--Content Section-->
+
+    <section class="container">
+
+        <h1 class="container-header">Contact Me</h1>
+
+        <!--Input Section-->
+        <form>
+            Name </br>
+            <input type="text" name="name"> </br>
+            Email </br>
+            <input type="email" name="email"> </br>
+            Message </br>
+            <textarea></textarea>
+            <!--Submit Btton--></br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+        <!--Footer-->
+        <div>
+            <footer>&copy;copyright</footer>
+        </div>
 </body>
+
 
 </html>
