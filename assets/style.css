@@ -1,11 +1,18 @@
 /*Universal Styles*/
 
+html {
+    height: 100%;
+}
+
 body {
     box-sizing: border-box;
     background-image: url("../images/hex-background-image.png");
     font-family: 'Poppins', sans-serif;
     max-width: 960px;
-    margin: 0px auto; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 p {
@@ -22,17 +29,15 @@ h1 {
 }
 
 footer {
-    clear: both;
+    flex-shrink: 1;
     font-size: 10px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: #666666;
     color: lightgray;
     border-top: 10px solid #4aaaa5;
     padding: 20px 20px 2px 20px;
+    box-shadow: -400px 10px 0px 0px #666666, 400px 10px 0px 0px #666666, -400px -5px 0px 0px #4aaaa5, 400px -5px 0px 0px #4aaaa5;
 }
 
 /*Top Banner*/
@@ -40,28 +45,26 @@ footer {
 .header {
     position: fixed !important;
     top: 0;
-    right: 0; 
+    right: 0;
     text-align: center;
     width: 100%;
-    margin: 0 auto ; 
+    margin: 0 10 auto;
     background-color: white;
     border: 1px solid #cccccc;
-
+    z-index: 2;
 }
 
-
-.header-inner{
-width: 960px; 
-margin: 0px auto; 
-
+.header-inner {
+    width: 960px;
+    margin: 0px auto;
 }
+
 #name {
     background-color: #4aaaa5;
     color: white;
     float: left;
     padding: 25px 20px;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
 }
 
 /*Navigation*/
@@ -80,11 +83,15 @@ nav a {
     padding-left: 5px;
     border-left: 1px solid grey;
     text-decoration: none;
-    text-decoration-color: currentColor;
     margin: 0px 2px;
 }
 
-a:link,
+#about:hover,
+#portfolio:hover,
+#contact:hover {
+    color: #664AC1;
+}
+
 a:visited {
     color: currentColor;
 }
@@ -96,14 +103,14 @@ a:visited {
 /*Main Section*/
 
 .container {
-    clear: both;
-    display: inline-block;
+    flex: 1 0 auto;
     max-width: 960px;
     width: 100%;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    margin: 100px auto;
+    margin: 100px auto 30px;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 .container-header {
@@ -134,7 +141,8 @@ textarea {
 
 textarea {
     padding: 80px 20px;
-    border: 1px solid lightgrey; 
+    border: 1px solid lightgrey;
+    height: 30px;
 }
 
 input[type=submit] {
@@ -150,15 +158,15 @@ form {
 
 /*Portfolio Images*/
 
-.container .portfolio-image {
-    display: inline-block;
-    position: static;
-}
-
 .portfolio-image {
     margin: 10px 10px 0px 10px;
-    position: relative;
-    overflow: hidden;
+    display: inline-block;
+    width: 220px;
+}
+
+.portfolio-image:hover {
+    outline: 5px solid #6D44EF;
+    outline-offset: 2px;
 }
 
 .caption {
