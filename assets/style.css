@@ -29,7 +29,8 @@ h1 {
 }
 
 footer {
-    flex-shrink: 1;
+    position: sticky; 
+    bottom: 0; 
     font-size: 10px;
     text-align: center;
     width: 100%;
