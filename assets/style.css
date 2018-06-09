@@ -178,3 +178,7 @@ form {
     position: relative;
     padding: 10px 2px;
 }
+
+.portfolio-links {
+    text-decoration: none; 
+}
