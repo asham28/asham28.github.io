@@ -163,13 +163,17 @@ form {
     margin: 10px 10px 0px 10px;
     display: inline-block;
     width: 220px;
+    height: 260px;
 }
 
-.portfolio-image:hover {
-    outline: 5px solid #6D44EF;
+.icon:hover {
+    outline: 2px solid #6D44EF;
     outline-offset: 2px;
 }
 
+.portfolio-image:hover {
+    outline: 3px dotted grey; 
+}
 .caption {
     background-color: #4aaaa5;
     color: white;
@@ -182,3 +186,4 @@ form {
 .portfolio-links {
     text-decoration: none; 
 }
+
