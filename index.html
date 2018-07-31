@@ -1,55 +1,191 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 
 <head>
-    <title>About</title>
-    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Single Blog</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--About Me-->
 
 <body>
-
-
-    <!--Content Header-->
-
-    <header class="header">
-        <div class="header-inner">
-            <h1 id="name">Asha Mohamed</h1>
-
-            <!--Navitation Section-->
-
-            <nav class="nav">
-                <a href="index.html" id="about">About</a>
-                <a href="portfolio.html" id="portfolio">Portfolio</a>
-                <a href="contact.html" id="contact">Contact</a>
-            </nav>
+    <header class="site-header">
+        <div class="site-branding">
+            <h1 class="site-title">
+                <a href="index.html" rel="home">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </h1>
         </div>
+        <!-- .site-branding -->
+
+        <div class="hamburger-menu">
+            <div class="menu-icon">
+                <img src="images/menu-icon.png" alt="menu icon">
+            </div>
+            <!-- .menu-icon -->
+
+            <div class="menu-close-icon">
+                <img src="images/x.png" alt="menu close icon">
+            </div>
+            <!-- .menu-close-icon -->
+        </div>
+        <!-- .hamburger-menu -->
     </header>
+    <!-- .site-header -->
 
-    <section class="container">
+    <nav class="site-navigation flex flex-column justify-content-between">
+        <div class="site-branding d-none d-lg-block ">
+            <h1 class="site-title">
+                <a href="index.html" rel="home">
+                    <img src="images/logo2.png" alt="Logo">
+                </a>
+            </h1>
+        </div>
+        <!-- .site-branding -->
+
+        <ul class="main-menu flex flex-column justify-content-center">
+            <li class="current-menu-item">
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+        </ul>
 
 
-        <h1 class="container-header">About Me</h1>
 
 
-        <img id="profile-image" src="./images/profile-picture.jpg" alt="profile picture" width=180px height=204px>
+        <div class="social-profiles">
+            <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+                    <li>
+                            <a href="https://github.com/asham28" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/asha-mohamed-64115988/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+        <!-- .social-profiles -->
+        <p style="font-size: 10px !important">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+    </nav>
+    <!-- .site-navigation -->
 
-        <p>Oh, hi there!</p>
-        <p>I'm Asha, a working professional in Toronto, ON, who has recently discovered a passion for web development. I'm currently
-            enrolled in a coding bootcamp course. I've been spending a lot of time learning the basics of HTML, CSS, &amp;
-            JavaScript. As my coding journey continues, I'll be adding a lot more languages to this list!</p>
-        <p>When I'm not busy googling why my code isn't doing exaaaaaactly what I want, I like to explore the city and check
-            local coffee shops off my bucket list.</p>
-        <p> Explore this page and the links to see what I've been working on!</p>
+    <div class="nav-bar-sep d-lg-none"></div>
 
-    </section>
+    <div class="outer-container">
+        <div class="single-post">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="breadcrumbs flex align-items-center">
+                            <li>About</li>
+                            <li>
+                                <a href="portfolio.html">Portfolio</a>
+                            </li>
+                        </ul>
+                        <!-- .breadcrumbs -->
+                    </div>
+                    <!-- .col -->
+                </div>
+                <!-- .row -->
 
-    <div>
-        <footer>&copy;copyright</footer>
-    </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="featured-img">
+                            <figure>
+                                <img id="profile" src="images/portfolioPicture.jpg" alt="blog">
+                            </figure>
+                        </div>
+                        <!-- .content-area -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-12 col-lg-8">
+                        <div class="content-area">
+                            <header class="entry-header">
+                                <div class="post-meta">
+                                    <a href="#">Portfolio</a>
+                                </div>
+                                <!-- .meta-post -->
+
+                                <h1>Learner. Planner. Web Developer.</h1>
+
+                            </header>
+                            <!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <p> My name is Asha and I’m an up and coming full stack web developer. I started out my career
+                                    managing projects and people at a research institute. I’m now putting that same drive,
+                                    time management skills, and leadership skills into learning the intricacies of computer
+                                    programming. I’m supplementing my online studies with formal training through University
+                                    of Toronto’s Coding Bootcamp. </p>
+
+                                <p>To date, I have developed a word guessing game and magic eight ball fortuneteller. Links
+                                    to these projects and more can be found on my personal website (link below). These projects
+                                    are just starting points. My goal is to gain the necessary skills to create beautiful
+                                    and functional websites or apps for clients looking to develop their online presence.
+                                    With my expanding knowledge of HTML, CSS, and JavaScript, I hope to soon thrive in a
+                                    fast-paced software development world.
+                                </p>
+
+                            </div>
+                            <!-- .entry-content -->
+                        </div>
+                        <!-- .content-area -->
+                    </div>
+                    <!-- .col-12 -->
+
+
+
+                    <div class="post-share">
+                        <label>Connect</label>
+                        <ul>
+                            <li class="in">
+                                <a href="https://github.com/asham28" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="tw">
+                                <a href="https://www.linkedin.com/in/asha-mohamed-64115988/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .post-share -->
+                </div>
+                <!-- .entry-meta -->
+                </aside>
+                <!-- .col-md-3 -->
+
+
+                <script type='text/javascript' src='js/jquery.js'></script>
+                <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 

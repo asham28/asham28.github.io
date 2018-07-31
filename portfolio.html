@@ -1,117 +1,286 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
-    <!--rel=stylesheet has extra s-->
-    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <!--Font Awesome-->
+    <title>Hello World</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!--Content Header-->
-
-    <header class="header">
-        <div class="header-inner">
-            <h1 id="name">Asha Mohamed</h1>
-
-            <!--Navitation Section-->
-
-            <nav class="nav">
-                <a href="index.html" id="about">About</a>
-                <a href="portfolio.html" id="portfolio">Portfolio</a>
-                <a href="contact.html" id="contact">Contact</a>
-            </nav>
+    <header class="site-header">
+        <div class="site-branding">
+            <h1 class="site-title">
+                <a href="index.html" rel="home">
+                    <!--CREATE A LOGO! -->
+                    <!--CREATE A LOGO! -->
+                    <!--CREATE A LOGO! -->
+                    <img src="images/logo.png" alt="Logo">
+                    <!--CREATE A LOGO! -->
+                    <!--CREATE A LOGO! -->
+                    <!--CREATE A LOGO! -->
+                </a>
+            </h1>
         </div>
+        <!-- .site-branding -->
+
+        <div class="hamburger-menu">
+            <div class="menu-icon">
+                <img src="images/menu-icon.png" alt="menu icon">
+            </div>
+            <!-- .menu-icon -->
+
+            <div class="menu-close-icon">
+                <img src="images/x.png" alt="menu close icon">
+            </div>
+            <!-- .menu-close-icon -->
+        </div>
+        <!-- .hamburger-menu -->
     </header>
+    <!-- .site-header -->
 
-
-    <section class="container">
-        <h1 class="container-header">Portfolio</h1>
-
-        <div class="portfolio-image">
-            <img src="images/portfolio1.jpg" alt="word-guess game" width="220px" height="200px">
-            <p class="caption"> Word Guess Game</p>
-
-            <!--Deployed Page-->
-            <a href="https://asham28.github.io/word-guess/">
-                <i class="icon caption fas fa-desktop"> Deployed Page</i>
-            </a>
-
-            <!--GitHub-->
-            <a href="https://github.com/asham28/word-guess">
-                <i class="icon caption fab fa-github"> Github</i>
-            </a>
+    <nav class="site-navigation flex flex-column justify-content-between">
+        <div class="site-branding d-none d-lg-block ">
+            <h1 class="site-title">
+                <a href="index.html" rel="home">
+                    <img src="images/logo2.png" alt="Logo">
+                </a>
+            </h1>
         </div>
+        <!-- .site-branding -->
 
+        <ul class="main-menu flex flex-column justify-content-center">
+            <li class="current-menu-item">
+                <a href="index.html">About</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+        </ul>
 
-        <div class="portfolio-image">
-            <img src="images/portfolio2.jpg" alt="Crystal Game" width="220px" height="200px">
-            <p class="caption"> Crystal Game</p>
-            <!--Deployed Page-->
-            <a href="https://asham28.github.io/unit-4-game/">
-                <i class="icon caption fas fa-desktop"> Deployed Page</i>
-            </a>
-            <!--GitHub-->
-            <a href="https://github.com/asham28/unit-4-game">
-                <i class="icon caption fab fa-github"> Github </i>
-            </a>
+        <div class="social-profiles">
+            <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+                <li>
+                    <a href="https://github.com/asham28" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/asha-mohamed-64115988/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
+        <!-- .social-profiles -->
 
-        <div class="portfolio-image">
-            <img src="images/portfolio3.jpg" alt="Trivia Game" width="220px" height="200px">
-            <p class="caption">Trivia Game</p>
-            <!--Deployed Page-->
-            <a href="https://asham28.github.io/trivia-game/">
-                <i class="icon caption fas fa-desktop"> Deployed Page</i>
-            </a>
-            <!--GitHub-->
-            <a href="https://github.com/asham28/trivia-game">
-                <i class="icon caption fab fa-github"> Github</i>
-            </a>
-        </div>
-
-        <div class="portfolio-image">
-            <img src="images/portfolio4.jpg" alt="Rutgers Info Widget" width="220px" height="200px">
-            <p class="caption">Giphy Generator</p>
-            <!--Deployed Page-->
-            <a href="https://asham28.github.io/gifyApp/">
-                <i class="icon caption fas fa-desktop"> Deployed Page</i>
-            </a>
-            <!--GitHub-->
-            <a href="https://github.com/asham28/gifyApp">
-                <i class="icon caption fab fa-github"> Github</i>
-            </a>
-        </div>
-
-        <div class="portfolio-image">
-            <img src="images/portfolio5.jpg" alt="Good Eats" width="220px" height="200px">
-            <p class="caption">Good Eats</p>
-            <!--Deployed Page-->
-            <a href="https://asham28.github.io/goodEats/">
-                <i class="icon caption fas fa-desktop"> Deployed Page</i>
-            </a>
-            <!--GitHub-->
-            <a href="https://github.com/asham28/goodEats">
-                <i class="icon caption fab fa-github"> Github</i>
-            </a>
-        </div>
+        <p style="font-size: 10px !important">
+                
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+    </nav>
+    <!-- .site-navigation -->
 
 
+    <div class="nav-bar-sep d-lg-none"></div>
 
-    </section>
+    <div class="outer-container">
+        <div class="container portfolio-page">
+            <div class="row">
+                <div class="col">
+                    <ul class="breadcrumbs flex align-items-center">
+                        <li>
+                            <a href="index.html">About</a>
+                        </li>
+                        <li>Portfolio</li>
+                    </ul>
+                    <!-- .breadcrumbs -->
+                </div>
+                <!-- .col -->
+            </div>
+            <!-- .row -->
 
-    <!--Footer-->
-    <div>
-        <footer>&copy;copyright</footer>
-    </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio1.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">Word Guess Game</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/word-guess" target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/word-guess/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio2.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">Crystal Collector</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/Crystal-Collector-Game"  target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/Crystal-Collector-Game/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio3.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">Harry Potter Trivia Game</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/trivia-game"  target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/trivia-game/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio4.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">Giphy Generator</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/gifyApp"  target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/gifyApp/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio5.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">Good Eats</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/goodEats"  target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/goodEats/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-content">
+                        <figure>
+                            <img src="images/portfolio6.jpg" alt="">
+                        </figure>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>
+                                <a href="#">LIRI</a>
+                            </h3>
+
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>
+                                    <a href="https://github.com/asham28/liri-node-app"  target="_blank">Github,</a>
+                                </li>
+                                <li>
+                                    <a href="https://asham28.github.io/liri-node-app/"  target="_blank">Deployed Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .portfolio-content -->
+                </div>
+                <!-- .col -->
+    
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
-
 
 </html>
